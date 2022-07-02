@@ -50,9 +50,14 @@ After running my python script, the election-audit results, that were printed to
 
 ![](Resources/election_results.png)    
 
-The election-audit dataset contained 369,711 rows of data, in which each row was counted as one vote for one of the three candidates, from one of the three counties, based off of its ballot ID. Denver receieved the highest voter turnout, with 306,055 total votes, or 82.8% of all votes cast in this election. Jefferson received the second-most votes, with 38,855 total votes, or 10.5% of the total votes cast. Arapahoe had the lowest voter turnout, with only 24,801 total votes, or 6.7% of all the votes cast. 
+The election-audit dataset contained 369,711 rows of data, in which each row was counted as one vote for one of the three candidates, from one of the three counties, based off of its ballot ID. 
+* Denver receieved the highest voter turnout, with 306,055 total votes, or 82.8% of all votes cast in this election. 
+* Jefferson received the second-most votes, with 38,855 total votes, or 10.5% of the total votes cast. 
+* Arapahoe had the lowest voter turnout, with only 24,801 total votes, or 6.7% of all the votes cast. 
 
-As for the candidates, Diana DeGette was the candidate winner of the election, and she received 272,892 total votes, or 73.8% of the total votes cast overall. Charles Casper Stockham came in second place, and received 85,213 total votes, or 23.0% of the total votes cast. Raymon Anthony Doane came in last place, and only received 11,606 votes, or 3.1% of the total votes cast in this election. 
+* Diana DeGette was the candidate winner of the election, and she received 272,892 total votes, or 73.8% of the total votes cast overall. 
+* Charles Casper Stockham came in second place, and received 85,213 total votes, or 23.0% of the total votes cast. 
+* Raymon Anthony Doane came in last place, and only received 11,606 votes, or 3.1% of the total votes cast in this election. 
 
 ## Election-Audit Summary 
 
