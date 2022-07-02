@@ -22,7 +22,7 @@ A Colorado Board of Elections employee has given me the following tasks, listed 
 
 ## The Data 
 
-For this project, I was given a csv file containing a large amount of voter ballot data, with columns for "Ballot Id", "County", and "Candidate". The "County" column provided information for what county that voter ballot ID was from, and the "Candidate" column provided the name that the ballot Id was voting for. When writing this script in VS studio, I had to create multiple variables that would be used in the subsequent for-loops, if-then conditional statements, and for my arithmetic calculations. In order to write my python script in VS code, I had to create a file path so that the csv file was able to be accessed, and I had to create a txt.file for the results to written to after I ran my script. There are two ways to create a file path, either by using a direct path or an indirect path to the file. Even though I knew the direct path to the election results csv file, I wanted to practice using an indirect path to the csv file. In some real-world settings, someone might want me to do an analysis on a file, where all I know is that it is in a specific folder, but I might not know where the file is on the computer, which makes it beneficial to know both methods. I have provided an example of how the indirect path method was used, (as shown below).
+For this project, I was given a csv file containing a large amount of voter ballot data, with columns for "Ballot Id", "County", and "Candidate". The "County" column provided information for what county that voter ballot ID was from, and the "Candidate" column provided the name that the ballot Id was voting for. When writing this script in VS (Visual Studio) code, I had to create multiple variables that would be used in the subsequent for-loops, if-then conditional statements, and for my arithmetic calculations. In order to write my python script in VS code, I had to create a file path so that the csv file was able to be accessed, and I had to create a txt.file for the results to written to after I ran my script. There are two ways to create a file path, either by using a direct path or an indirect path to the file. Even though I knew the direct path to the election results csv file, I wanted to practice using an indirect path to the csv file. In some real-world settings, someone might want me to do an analysis on a file, where all I know is that it is in a specific folder, but I might not know where the file is on the computer, which makes it beneficial to know both methods. I have provided an example of how the indirect path method was used, (as shown below).
 
 ![](Resources/indirect_path.png)
 
@@ -30,31 +30,17 @@ Using a with open statement, I am telling the computer to open the csv file and 
 
 ![](Resources/vote_start_count.png)
 
-Following the vote count, I had to create another with open statement to save the results to a text file that would print the election results. I created another for loop inside the with open statement, that would get the county from the previously created dictionary, and then calculate the total amount of votes, that were cast from each county, and using that total to provide a percentage of (votes counted) divided by the (total votes cast from all three counties) * 100 . Using an f-string, I was able to print a summary of the results for each county in the text file, which was written in a format that was easily readable. The same steps were used to print a summary of the total votes cast for each candidate. I used f-strings(or Formatted String Literals) to print my results for total candidate votes, total county votes, the percentages for the candidate and county breakdown, to display where the largest voter turnout was, and who the winning candidate was. The f-strings were placed in specific lines within the script, so that the analysis results were printed to the text file after each for loop was ran, and before the run of the next for loop. The nice thing about f-strings, is that it can be used in place of the print() function, which would require the use of concatenation because the analysis results contain variables that are of integer data types, and an extra step is needed to convert the integer data type to a string data type. An f-string can perform a calculation and will format the values of those calculations as a string, thus, that extra data type conversion is not necessary, and the code is more concise and easier to read. 
+Following the vote count, I had to create another with open statement to save the results to a text file that would print the election results. I created another for loop inside the with open statement, that would get the county from the previously created dictionary, and then calculate the total amount of votes, that were cast from each county, and using that total to provide a percentage of (votes counted) divided by the (total votes cast from all three counties) * 100 . Using an f-string, I was able to print a summary of the results for each county in the text file, which was written in a format that was easily readable. 
+
+The same steps were used to print a summary of the total votes cast for each candidate. I used f-strings(or Formatted String Literals) to print my results for total candidate votes, total county votes, the percentages for the candidate and county breakdown, to display where the largest voter turnout was, and who the winning candidate was. The f-strings were placed in specific lines within the script, so that the analysis results were printed to the text file after each for loop was ran, and before the run of the next for loop. The nice thing about f-strings, is that it can be used in place of the print() function, which would require the use of concatenation because the analysis results contain variables that are of integer data types, and an extra step is needed to convert the integer data type to a string data type. An f-string can perform a calculation and will format the values of those calculations as a string, thus, that extra data type conversion is not necessary, and the code is more concise and easier to read. 
 
 I have provided an example (shown below) of the utilization of f-strings within my python script, and illustrating the reasoning behind why the placement of an f-string matters.
 
 ![](Resources/f_string_example.png)
 
-
 ## Election-Audit Results: 
 
 After running my python script, the election-audit results, that were printed to my election_analysis.txt file, are shown below:  
-* Total Congressional Election Votes: 369,711
-* Breakdown Of Votes and Percentage Of Total Votes For Each County In The Precinct:
-    * Jefferson: 10.5% (38,855)
-    * Denver: 82.8% (306,055)
-    * Arapahoe: 6.7% (24,801)
-* County With Largest Number of Votes: 
-    * Denver
-* Breakdown Of Votes and Percentage Of Total Votes Received For Each Candidate:
-    * Charles Casper Stockham: 23.0% (85,213)
-    * Diana DeGette: 73.8% (272,892)
-    * Raymon Anthony Doane: 3.1% (11,606)
-* Candidate Winner Of The Election: 
-    * Diana DeGette 
-    * Vote Count: 272,892
-    * Percentage of Total Votes Received: 73.8%
 
 ![](Resources/election_results.png)    
 
